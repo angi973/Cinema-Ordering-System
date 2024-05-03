@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<center>
+    <br></br>
+    <img src="https://img.freepik.com/premium-vector/people-watching-movie-cinema-hall-interior-cartoon-family-theater-vector-concept_53562-7915.jpg" alt="Girl in a jacket " style="width:700px;height:500px;"> 
+    <br></br>
+    <h1>THANK YOU</h1>
+    <h5>Enjoy your movie!!</h5>
+    <form method="POST" action="">
+        {%csrf_token%}
+        <input type="submit" value="Get Email Receipt" class="btn btn-success" style="margin-top: 15px">
+    </form>
+</center>
+
+
+{% endblock %}
